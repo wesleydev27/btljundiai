@@ -58,11 +58,6 @@ body { font-family: 'Poppins', sans-serif; color: var(--text); background: #fff;
 .logo-text { color: white; font-weight: 900; font-size: 1.45rem; line-height: 1.15; letter-spacing: -.03em; }
 .logo-text span { color: #7dc4ff; display: block; font-size: .72rem; font-weight: 500; letter-spacing: .04em; }
 
-/* --- Links de navegação --- */
-nav { display: flex; align-items: center; gap: 28px; }
-nav a { color: rgba(255,255,255,.85); text-decoration: none; font-size: .9rem; font-weight: 500; transition: color .2s; }
-nav a:hover { color: #fff; }
-
 /* --- Botão de orçamento no header --- */
 .btn-header {
   background: var(--green); color: #fff; border: none; border-radius: 8px;
@@ -73,9 +68,6 @@ nav a:hover { color: #fff; }
 }
 .btn-header:hover { background: var(--green-dark); transform: translateY(-1px); }
 
-/* --- Botão hambúrguer (aparece só no mobile) --- */
-.menu-toggle { display: none; background: none; border: none; cursor: pointer; flex-direction: column; gap: 5px; }
-.menu-toggle span { display: none; width: 24px; height: 2px; background: #fff; border-radius: 2px; transition: .3s; }
 
 /* ================================================
    HERO — SEÇÃO PRINCIPAL (BANNER DO TOPO)
@@ -99,19 +91,19 @@ nav a:hover { color: #fff; }
   position: absolute; inset: 0;
   background-size: cover; background-position: center;
   opacity: 0; /* Começa invisível; a animação controla a visibilidade */
-  animation: heroSlide 20s infinite; /* 20s = duração total do ciclo (4 fotos × 5s) */
+  animation: heroSlide 240s infinite; /* 240s = duração total do ciclo (4 fotos × 60s) */
 }
-/* Atraso de entrada de cada slide (5 segundos entre cada um) */
+/* Atraso de entrada de cada slide (60 segundos entre cada um) */
 .hero-slideshow .slide:nth-child(1) { animation-delay: 0s; }
-.hero-slideshow .slide:nth-child(2) { animation-delay: 5s; }
-.hero-slideshow .slide:nth-child(3) { animation-delay: 10s; }
-.hero-slideshow .slide:nth-child(4) { animation-delay: 15s; }
-/* Animação: aparece em 5%, fica visível até 23%, some em 28% */
+.hero-slideshow .slide:nth-child(2) { animation-delay: 60s; }
+.hero-slideshow .slide:nth-child(3) { animation-delay: 120s; }
+.hero-slideshow .slide:nth-child(4) { animation-delay: 180s; }
+/* Animação: aparece em 1%, fica visível até 24%, some em 25% */
 @keyframes heroSlide {
   0%   { opacity: 0; }
-  5%   { opacity: 1; }
-  23%  { opacity: 1; }
-  28%  { opacity: 0; }
+  1%   { opacity: 1; }
+  24%  { opacity: 1; }
+  25%  { opacity: 0; }
   100% { opacity: 0; }
 }
 
@@ -569,13 +561,8 @@ section { padding: 80px 5%; }
    RESPONSIVO — TABLETS (até 900px)
    ================================================ */
 @media (max-width: 900px) {
-  nav { display: none; } /* Menu escondido; abre ao clicar no hambúrguer */
-  nav.open {
-    display: flex; flex-direction: column; align-items: flex-start;
-    position: absolute; top: 70px; left: 0; right: 0;
-    background: var(--blue-dark); padding: 20px 5%;
-    gap: 16px; box-shadow: 0 8px 24px rgba(0,0,0,.3);
-  }
+  /* Botão visível no header do mobile, com padding reduzido para caber */
+  .btn-header { padding: 9px 14px; font-size: .8rem; gap: 6px; }
   .logo-text{display: none;}
   .diff-card { flex: 0 1 calc(50% - 16px); } /* 2 colunas de diferenciais */
   .about-inner, .contact-inner { grid-template-columns: 1fr; } /* Empilha as colunas */

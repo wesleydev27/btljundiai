@@ -146,20 +146,10 @@ window.addEventListener('scroll', () => {
 });
 
 /* ================================================
-   MENU MOBILE — ABRIR E FECHAR
-   O botão hambúrguer (#menuToggle) alterna a
-   classe "open" no nav, que o torna visível no mobile
-   ================================================ */
-document.getElementById('menuToggle').addEventListener('click', () => {
-  document.getElementById('nav').classList.toggle('open');
-});
-
-/* ================================================
-   ROLAGEM SUAVE AO CLICAR NOS LINKS DO MENU
+   ROLAGEM SUAVE AO CLICAR NOS LINKS ÂNCORA
    Intercepta cliques em links âncora (#secao) e
    rola suavemente até o elemento, descontando
-   70px do header fixo para não cobrir o conteúdo.
-   Também fecha o menu mobile após o clique.
+   75px do header fixo para não cobrir o conteúdo.
    ================================================ */
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', e => {
@@ -174,7 +164,6 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
       top: target.getBoundingClientRect().top + window.scrollY - 75, /* -75 = altura do header */
       behavior: 'smooth'
     });
-    document.getElementById('nav').classList.remove('open'); /* Fecha menu mobile */
   });
 });
 
