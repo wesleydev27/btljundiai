@@ -12,11 +12,14 @@ const WA = '5511996905490';
    Para remover: apague o bloco { } correspondente
    ================================================ */
 const SERVICES = [
+  { title: 'Conserto de Lavadora',          desc: 'Assistência Técnica especializada em lavadoras de todas as marcas e modelos. Instalação, conserto e manutenção.' },
+  { title: 'Assistência para Lava e Seca',  desc: 'Assistência técnica em lava e seca de todas as marcas e modelos. Instalação, conserto e manutenção.' },
+  { title: 'Assistência para Chopeira',  desc: 'Assistência técnica em chopeiras de todas as marcas e modelos.'},
+  { title: 'Assistência para Frigobar',  desc: 'Assistência técnica em frigobares de todas as marcas e modelos.' },
   { title: 'Assistência Técnica Geladeira', desc: 'Técnico especializado em geladeiras de todas as marcas e modelos. Instalação, conserto e manutenção. Diagnóstico no mesmo dia.' },
   { title: 'Conserto de Freezer',           desc: 'Assistência técnica faz o reparo de todas as marcas e modelos. Instalação, conserto e manutenção com excelência.' },
-  { title: 'Conserto de Lavadora',          desc: 'Assistência Técnica especializada em lavadoras de todas as marcas e modelos. Instalação, conserto e manutenção.' },
+  { title: 'Assistência para Micro-ondas',  desc: 'Assistência técnica em micro-ondas de todas as marcas e modelos. Instalação, conserto e manutenção especializada para garantir o perfeito funcionamento do seu equipamento.' },
   { title: 'Conserto de Secadora',          desc: 'Assistência técnica de secadoras de todas as marcas e modelos. Instalação, conserto e manutenção.' },
-  { title: 'Assistência para Lava e Seca',  desc: 'Assistência técnica em lava e seca de todas as marcas e modelos. Instalação, conserto e manutenção.' },
   { title: 'Assistência para Lava Louça',   desc: 'Assistência técnica em lava louças de todas as marcas e modelos. Instalação, conserto e manutenção.' },
   { title: 'Conserto de Placas Eletrônicas',desc: 'Nossa equipe trabalha rigorosamente no reparo de placas eletrônicas, garantindo precisão em cada reparo.' },
   { title: 'Conserto de Placas Inverter',   desc: 'As placas inverter controlam a velocidade do compressor. Reparamos com técnicos especializados.' },
