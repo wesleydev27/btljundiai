@@ -16,6 +16,7 @@ const SERVICES = [
   { title: 'Assistência para Lava e Seca',  desc: 'Assistência técnica em lava e seca de todas as marcas e modelos. Instalação, conserto e manutenção.' },
   { title: 'Assistência para Chopeira',  desc: 'Assistência técnica em chopeiras de todas as marcas e modelos.'},
   { title: 'Assistência para Frigobar',  desc: 'Assistência técnica em frigobares de todas as marcas e modelos.' },
+  { title: 'Assistência para Bebedouro',  desc: 'Assistência técnica em bebedouros de todas as marcas e modelos.' },
   { title: 'Assistência Técnica Geladeira', desc: 'Técnico especializado em geladeiras de todas as marcas e modelos. Instalação, conserto e manutenção. Diagnóstico no mesmo dia.' },
   { title: 'Conserto de Freezer',           desc: 'Assistência técnica faz o reparo de todas as marcas e modelos. Instalação, conserto e manutenção com excelência.' },
   { title: 'Assistência para Micro-ondas',  desc: 'Assistência técnica em micro-ondas de todas as marcas e modelos. Instalação, conserto e manutenção especializada para garantir o perfeito funcionamento do seu equipamento.' },
