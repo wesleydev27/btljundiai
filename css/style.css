@@ -75,7 +75,7 @@ nav a:hover { color: #fff; }
 
 /* --- Botão hambúrguer (aparece só no mobile) --- */
 .menu-toggle { display: none; background: none; border: none; cursor: pointer; flex-direction: column; gap: 5px; }
-.menu-toggle span { display: block; width: 24px; height: 2px; background: #fff; border-radius: 2px; transition: .3s; }
+.menu-toggle span { display: none; width: 24px; height: 2px; background: #fff; border-radius: 2px; transition: .3s; }
 
 /* ================================================
    HERO — SEÇÃO PRINCIPAL (BANNER DO TOPO)
@@ -576,13 +576,13 @@ section { padding: 80px 5%; }
     background: var(--blue-dark); padding: 20px 5%;
     gap: 16px; box-shadow: 0 8px 24px rgba(0,0,0,.3);
   }
-  .menu-toggle { display: flex; } /* Mostra o botão hambúrguer */
+  .logo-text{display: none;}
   .diff-card { flex: 0 1 calc(50% - 16px); } /* 2 colunas de diferenciais */
   .about-inner, .contact-inner { grid-template-columns: 1fr; } /* Empilha as colunas */
   .about-img { min-height: 280px; }
   .footer-inner { grid-template-columns: 1fr; } /* Footer em coluna única */
   .footer-bottom { flex-direction: column; text-align: center; }
-  .hero-stats { gap: 24px; }
+  .hero-stats { gap: 24px;}
 }
 
 /* ================================================
