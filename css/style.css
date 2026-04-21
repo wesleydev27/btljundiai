@@ -1,4 +1,14 @@
 /* ================================================
+   FONTES LOCAIS — Poppins (sem requisição ao Google)
+   ================================================ */
+@font-face { font-family:'Poppins'; font-style:normal; font-weight:400; font-display:swap; src:url('../assets/fonts/poppins-400.woff2') format('woff2'); }
+@font-face { font-family:'Poppins'; font-style:normal; font-weight:500; font-display:swap; src:url('../assets/fonts/poppins-500.woff2') format('woff2'); }
+@font-face { font-family:'Poppins'; font-style:normal; font-weight:600; font-display:swap; src:url('../assets/fonts/poppins-600.woff2') format('woff2'); }
+@font-face { font-family:'Poppins'; font-style:normal; font-weight:700; font-display:swap; src:url('../assets/fonts/poppins-700.woff2') format('woff2'); }
+@font-face { font-family:'Poppins'; font-style:normal; font-weight:800; font-display:swap; src:url('../assets/fonts/poppins-800.woff2') format('woff2'); }
+@font-face { font-family:'Poppins'; font-style:normal; font-weight:900; font-display:swap; src:url('../assets/fonts/poppins-900.woff2') format('woff2'); }
+
+/* ================================================
    RESET E CONFIGURAÇÃO GLOBAL
    ================================================ */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -332,9 +342,19 @@ section { padding: 80px 5%; }
 .service-card {
   background: #fff; border-radius: var(--radius);
   overflow: hidden; box-shadow: var(--shadow);
-  transition: transform .25s, box-shadow .25s;
+  transition: transform .3s cubic-bezier(.22,.68,0,1.2), box-shadow .3s;
+  cursor: pointer;
 }
-.service-card:hover { transform: translateY(-5px); box-shadow: 0 12px 40px rgba(10,35,66,.16); }
+/* Hover — desktop */
+.service-card:hover { transform: translateY(-7px) scale(1.02); box-shadow: 0 20px 48px rgba(10,35,66,.22); }
+.service-card:hover .service-img::after {
+  background: linear-gradient(160deg, rgba(10,35,66,.30) 0%, rgba(18,83,164,.18) 100%);
+}
+/* Active — toque no celular */
+.service-card:active { transform: scale(.97); box-shadow: 0 4px 16px rgba(10,35,66,.12); transition-duration: .1s; }
+.service-card:active .service-img::after {
+  background: linear-gradient(160deg, rgba(10,35,66,.65) 0%, rgba(18,83,164,.50) 100%);
+}
 
 /* Área da imagem do serviço */
 .service-img {
@@ -342,7 +362,14 @@ section { padding: 80px 5%; }
   background: var(--blue-pale);
   display: flex; align-items: center; justify-content: center;
 }
-.service-img img { width: 100%; height: 100%; object-fit: cover; }
+.service-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+/* Overlay sobre a imagem para harmonizar fotos de fontes diferentes */
+.service-img::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(160deg, rgba(10,35,66,.55) 0%, rgba(18,83,164,.38) 100%);
+  pointer-events: none;
+  transition: background .35s;
+}
 
 /* Corpo do card com texto e botão */
 .service-body { padding: 22px 22px 24px; }

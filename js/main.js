@@ -12,18 +12,65 @@ const WA = '5511996905490';
    Para remover: apague o bloco { } correspondente
    ================================================ */
 const SERVICES = [
-  { title: 'Conserto de Lavadora',          desc: 'Assistência Técnica especializada em lavadoras de todas as marcas e modelos. Instalação, conserto e manutenção.' },
-  { title: 'Assistência para Lava e Seca',  desc: 'Assistência técnica em lava e seca de todas as marcas e modelos. Instalação, conserto e manutenção.' },
-  { title: 'Assistência para Chopeira',  desc: 'Assistência técnica em chopeiras de todas as marcas e modelos.'},
-  { title: 'Assistência para Frigobar',  desc: 'Assistência técnica em frigobares de todas as marcas e modelos.' },
-  { title: 'Assistência para Bebedouro',  desc: 'Assistência técnica em bebedouros de todas as marcas e modelos.' },
-  { title: 'Assistência Técnica Geladeira', desc: 'Técnico especializado em geladeiras de todas as marcas e modelos. Instalação, conserto e manutenção. Diagnóstico no mesmo dia.' },
-  { title: 'Conserto de Freezer',           desc: 'Assistência técnica faz o reparo de todas as marcas e modelos. Instalação, conserto e manutenção com excelência.' },
-  { title: 'Assistência para Micro-ondas',  desc: 'Assistência técnica em micro-ondas de todas as marcas e modelos. Instalação, conserto e manutenção especializada para garantir o perfeito funcionamento do seu equipamento.' },
-  { title: 'Conserto de Secadora',          desc: 'Assistência técnica de secadoras de todas as marcas e modelos. Instalação, conserto e manutenção.' },
-  { title: 'Assistência para Lava Louça',   desc: 'Assistência técnica em lava louças de todas as marcas e modelos. Instalação, conserto e manutenção.' },
-  { title: 'Conserto de Placas Eletrônicas',desc: 'Nossa equipe trabalha rigorosamente no reparo de placas eletrônicas, garantindo precisão em cada reparo.' },
-  { title: 'Conserto de Placas Inverter',   desc: 'As placas inverter controlam a velocidade do compressor. Reparamos com técnicos especializados.' },
+  { title: 'Conserto de Lavadora',
+    desc: 'Assistência Técnica especializada em lavadoras de todas as marcas e modelos. Instalação, conserto e manutenção.',
+    icon: '<rect x="3" y="2" width="18" height="20" rx="2"/><circle cx="12" cy="13" r="5"/><path d="M8 6h2"/><circle cx="15" cy="6" r="1"/>',
+    img: 'assets/Conserto de Lavadora.webp' },
+
+  { title: 'Assistência para Lava e Seca',
+    desc: 'Assistência técnica em lava e seca de todas as marcas e modelos. Instalação, conserto e manutenção.',
+    icon: '<rect x="3" y="2" width="18" height="20" rx="2"/><circle cx="12" cy="13" r="5"/><path d="M8 6h2"/><circle cx="15" cy="6" r="1"/><path d="M16 8c1-1 2-1 2 1s-1 2-2 1"/>',
+    img: 'assets/Assistência para Lava e Seca.webp' }, /* troque por: assets/Lava e Seca.png */
+
+  { title: 'Assistência para Chopeira',
+    desc: 'Assistência técnica em chopeiras de todas as marcas e modelos.',
+    icon: '<path d="M8 3h8l1 4H7z"/><rect x="7" y="7" width="10" height="11" rx="1"/><path d="M12 18v3M9 21h6"/><path d="M17 10h2a2 2 0 010 4h-2"/>',
+    img: 'assets/Assistência para Chopeira.webp' }, /* troque por: assets/Chopeira.png */
+
+  { title: 'Assistência para Frigobar',
+    desc: 'Assistência técnica em frigobares de todas as marcas e modelos.',
+    icon: '<rect x="6" y="2" width="12" height="20" rx="2"/><path d="M6 10h12"/><path d="M11 6v2"/>',
+    img: 'assets/Assistência para Frigobar.webp' }, /* troque por: assets/Frigobar.png */
+
+  { title: 'Assistência para Bebedouro',
+    desc: 'Assistência técnica em bebedouros de todas as marcas e modelos.',
+    icon: '<path d="M12 2a4 4 0 014 4v2H8V6a4 4 0 014-4z"/><rect x="7" y="8" width="10" height="12" rx="2"/><path d="M12 14v3"/><circle cx="12" cy="13" r="1"/>',
+    img: 'assets/Assistência para Bebedouro.webp' }, /* troque por: assets/Bebedouro.png */
+
+  { title: 'Assistência Técnica Geladeira',
+    desc: 'Técnico especializado em geladeiras de todas as marcas e modelos. Instalação, conserto e manutenção. Diagnóstico no mesmo dia.',
+    icon: '<rect x="4" y="2" width="16" height="20" rx="2"/><path d="M4 10h16"/><path d="M10 6v2"/><path d="M10 15v3"/>',
+    img: 'assets/Conserto de Lavadora' }, /* troque por: assets/Geladeira.png */
+
+  { title: 'Conserto de Freezer',
+    desc: 'Assistência técnica faz o reparo de todas as marcas e modelos. Instalação, conserto e manutenção com excelência.',
+    icon: '<rect x="4" y="2" width="16" height="20" rx="2"/><path d="M12 7v10M8 9l8 6M16 9l-8 6"/>',
+    img: 'assets/Conserto de Lavadora' }, /* troque por: assets/Freezer.png */
+
+  { title: 'Assistência para Micro-ondas',
+    desc: 'Assistência técnica em micro-ondas de todas as marcas e modelos. Instalação, conserto e manutenção especializada para garantir o perfeito funcionamento do seu equipamento.',
+    icon: '<rect x="2" y="6" width="20" height="14" rx="2"/><rect x="5" y="9" width="9" height="8" rx="1"/><circle cx="19" cy="11" r="1"/><circle cx="19" cy="15" r="1"/>',
+    img: 'assets/Conserto de Lavadora' }, /* troque por: assets/Micro-ondas.png */
+
+  { title: 'Conserto de Secadora',
+    desc: 'Assistência técnica de secadoras de todas as marcas e modelos. Instalação, conserto e manutenção.',
+    icon: '<rect x="3" y="2" width="18" height="20" rx="2"/><circle cx="12" cy="13" r="5"/><path d="M8 6h2M15 6h1"/><path d="M10 13c0-1 1-2 2-2"/>',
+    img: 'assets/Conserto de Lavadora' }, /* troque por: assets/Secadora.png */
+
+  { title: 'Assistência para Lava Louça',
+    desc: 'Assistência técnica em lava louças de todas as marcas e modelos. Instalação, conserto e manutenção.',
+    icon: '<rect x="3" y="2" width="18" height="20" rx="2"/><path d="M3 8h18"/><path d="M7 13h10M7 16h10"/><path d="M9 11l1 2M13 11l1 2"/>',
+    img: 'assets/Conserto de Lavadora' }, /* troque por: assets/Lava Louca.png */
+
+  { title: 'Conserto de Placas Eletrônicas',
+    desc: 'Nossa equipe trabalha rigorosamente no reparo de placas eletrônicas, garantindo precisão em cada reparo.',
+    icon: '<rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 2v2M10 2v2M14 2v2M18 2v2M6 20v2M18 20v2"/><circle cx="9" cy="10" r="1"/><circle cx="15" cy="10" r="1"/><path d="M7 14h10"/>',
+    img: 'assets/Conserto de Lavadora' }, /* troque por: assets/Placas Eletronicas.png */
+
+  { title: 'Conserto de Placas Inverter',
+    desc: 'As placas inverter controlam a velocidade do compressor. Reparamos com técnicos especializados.',
+    icon: '<rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 12h2l2-4 2 8 2-4h4"/><circle cx="6" cy="8" r="1" fill="currentColor"/><circle cx="18" cy="16" r="1" fill="currentColor"/>',
+    img: 'assets/Conserto de Lavadora' }, /* troque por: assets/Placas Inverter.png */
 ];
 
 /* ================================================
@@ -52,11 +99,10 @@ function renderServices() {
   grid.innerHTML = SERVICES.map(s => `
     <article class="service-card reveal">
       <div class="service-img">
-        <!-- Ícone placeholder — substitua por <img src="assets/nome.jpg"> -->
-        <svg viewBox="0 0 24 24" fill="none" stroke="#1253a4" stroke-width="1.2" style="width:52px;height:52px;opacity:.25">
-          <rect x="2" y="5" width="20" height="14" rx="2"/>
-          <path d="M7 5V3m10 2V3M2 10h20"/>
-        </svg>
+        ${s.img
+          ? `<img src="${s.img}" alt="${s.title}" style="width:100%;height:100%;object-fit:cover;display:block">`
+          : `<svg viewBox="0 0 24 24" fill="none" stroke="#1253a4" stroke-width="1.2" aria-hidden="true" style="width:56px;height:56px;opacity:.35">${s.icon}</svg>`
+        }
       </div>
       <div class="service-body">
         <h3>${s.title}</h3>
