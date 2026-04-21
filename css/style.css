@@ -90,22 +90,31 @@ body { font-family: 'Poppins', sans-serif; color: var(--text); background: #fff;
 .hero-slideshow .slide {
   position: absolute; inset: 0;
   background-size: cover; background-position: center;
-  opacity: 0; /* Começa invisível; a animação controla a visibilidade */
-  animation: heroSlide 240s infinite; /* 240s = duração total do ciclo (4 fotos × 60s) */
+  opacity: 0;
+  animation: heroFadeIn 1.8s ease forwards; /* Surge suavemente ao abrir o site */
 }
-/* Atraso de entrada de cada slide (60 segundos entre cada um) */
+@keyframes heroFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* --- Para reativar o slideshow no futuro, substitua o bloco acima por:
+.hero-slideshow .slide {
+  position: absolute; inset: 0;
+  background-size: cover; background-position: center;
+  opacity: 0;
+  animation: heroSlide 240s infinite;
+}
 .hero-slideshow .slide:nth-child(1) { animation-delay: 0s; }
 .hero-slideshow .slide:nth-child(2) { animation-delay: 60s; }
 .hero-slideshow .slide:nth-child(3) { animation-delay: 120s; }
 .hero-slideshow .slide:nth-child(4) { animation-delay: 180s; }
-/* Animação: aparece em 1%, fica visível até 24%, some em 25% */
 @keyframes heroSlide {
-  0%   { opacity: 0; }
-  1%   { opacity: 1; }
-  24%  { opacity: 1; }
-  25%  { opacity: 0; }
-  100% { opacity: 0; }
+  0%  { opacity: 0; } 1%  { opacity: 1; }
+  24% { opacity: 1; } 25% { opacity: 0; }
+  100%{ opacity: 0; }
 }
+--- */
 
 /* --- Overlay escuro sobre as fotos (garante legibilidade do texto) ---
    Ajuste a opacidade (ex: .82 → .60) para deixar as fotos mais visíveis
@@ -117,7 +126,7 @@ body { font-family: 'Poppins', sans-serif; color: var(--text); background: #fff;
 
 
 /* --- Conteúdo central do hero (fica acima de tudo) --- */
-.hero-content { position: relative; z-index: 2; max-width: 780px; padding: 0 20px; }
+.hero-content { position: relative; z-index: 2; max-width: 780px; padding: 0 20px; margin-bottom: 100px; }
 
 /* Etiqueta/badge acima do título */
 .hero-tag {
