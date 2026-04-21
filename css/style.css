@@ -245,7 +245,11 @@ section { padding: 80px 5%; }
 /* ================================================
    SOLUÇÕES — CARDS DOS APARELHOS ATENDIDOS
    ================================================ */
-#solutions { background: var(--dark); }
+#solutions {
+  background:
+    linear-gradient(rgba(6,15,26,.89), rgba(6,15,26,.89)),
+    url('../assets/slide1.webp') center/cover no-repeat fixed;
+}
 .solutions-header { text-align: center; margin-bottom: 50px; }
 .solutions-grid {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
