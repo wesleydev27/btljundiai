@@ -29,6 +29,8 @@
    ================================================ */
 html { scroll-behavior: smooth; /* Rolagem suave ao clicar em âncoras */ }
 body { font-family: 'Poppins', sans-serif; color: var(--text); background: #fff; overflow-x: hidden; }
+/* Foco visível para navegação por teclado */
+:focus-visible { outline: 3px solid var(--blue-light); outline-offset: 3px; border-radius: 4px; }
 
 /* ================================================
    HEADER — BARRA DE NAVEGAÇÃO SUPERIOR
