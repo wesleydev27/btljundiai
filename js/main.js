@@ -109,7 +109,7 @@ function renderServices() {
         <p>${s.desc}</p>
         <!-- Botão abre o WhatsApp com mensagem pré-preenchida com o nome do serviço -->
         <a href="https://wa.me/${WA}?text=${encodeURIComponent('Olá! Preciso de assistência para: ' + s.title)}"
-           class="btn-service" target="_blank">Pedir Orçamento</a>
+           class="btn-service" target="_blank" rel="noopener noreferrer">Pedir Orçamento</a>
       </div>
     </article>
   `).join('');
@@ -215,10 +215,97 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 });
 
 /* ================================================
+   EFEITO MÁQUINA DE ESCREVER
+   Digita o texto do elemento caractere por caractere.
+   - elemento : o elemento HTML alvo
+   - velocidade: milissegundos entre cada caractere (padrão 38ms)
+   - delay     : tempo de espera antes de começar (em ms)
+   ================================================ */
+function maquinaDeEscrever(elemento, velocidade = 38, delay = 0) {
+  const textoCompleto = elemento.textContent.trim();
+
+  /* Guarda o texto completo para leitores de tela (acessibilidade) */
+  elemento.setAttribute('aria-label', textoCompleto);
+  elemento.textContent = '';
+  elemento.style.visibility = 'visible';
+
+  setTimeout(() => {
+    let i = 0;
+    const intervalo = setInterval(() => {
+      elemento.textContent += textoCompleto[i];
+      i++;
+      if (i >= textoCompleto.length) clearInterval(intervalo); /* Para ao terminar */
+    }, velocidade);
+  }, delay);
+}
+
+/* ================================================
+   TEXTOS ROTATIVOS DO HERO
+   Cada item tem um título (com HTML) e um subtítulo.
+   Mudam a cada 60 segundos — sincronizado com o slideshow.
+   Para editar: altere os textos abaixo.
+   ================================================ */
+const HERO_TEXTOS = [
+  {
+    titulo:    'Seu Eletrodoméstico <span class="highlight">Funcionando</span><br>Hoje Mesmo',
+    subtitulo: 'Conserto rápido, peças originais e garantia em todos os serviços.'
+  },
+  {
+    titulo:    'Geladeira Parou? <span class="highlight">Resolvemos</span><br>no Mesmo Dia',
+    subtitulo: 'Diagnóstico rápido, orçamento grátis e garantia em todos os serviços.'
+  },
+  {
+    titulo:    'Consertar Custa Menos<br>do que <span class="highlight">Você Imagina</span>',
+    subtitulo: 'Preço justo, sem surpresas. Você aprova o orçamento antes de qualquer serviço.'
+  },
+];
+
+/* Referências dos elementos do hero que serão trocados */
+const heroH1       = document.querySelector('#hero h1');
+const heroSubtitulo = document.querySelector('#hero > .hero-content > p');
+let heroIndice     = 0; /* Começa no primeiro texto */
+
+/* Aplica o efeito de máquina de escrever no subtítulo e troca o título */
+function aplicarTextoHero(indice, primeiraVez = false) {
+  const texto = HERO_TEXTOS[indice];
+  const delay = primeiraVez ? 900 : 400; /* Na primeira vez espera as animações CSS */
+
+  /* Troca o título com fade */
+  if (heroH1) {
+    heroH1.style.opacity    = '0';
+    heroH1.style.transform  = 'translateY(20px)';
+    heroH1.style.transition = 'opacity .4s, transform .4s';
+    setTimeout(() => {
+      heroH1.innerHTML       = texto.titulo;
+      heroH1.style.opacity   = '1';
+      heroH1.style.transform = 'translateY(0)';
+    }, primeiraVez ? 0 : 350);
+  }
+
+  /* Troca o subtítulo com efeito de digitação */
+  if (heroSubtitulo) {
+    heroSubtitulo.style.visibility = 'hidden';
+    heroSubtitulo.textContent      = texto.subtitulo;
+    maquinaDeEscrever(heroSubtitulo, 38, delay);
+  }
+}
+
+/* Inicia o primeiro texto ao carregar */
+aplicarTextoHero(heroIndice, true);
+
+/* Rotaciona os textos a cada 60 segundos */
+setInterval(() => {
+  heroIndice = (heroIndice + 1) % HERO_TEXTOS.length; /* Avança e volta ao início */
+  aplicarTextoHero(heroIndice);
+}, 60000);
+
+/* ================================================
    INICIALIZAÇÃO — EXECUTA AO CARREGAR A PÁGINA
    ================================================ */
 renderServices();      /* Monta os cards de serviços */
 renderTestimonials();  /* Monta o carrossel de depoimentos */
 
-/* Ativa ícones da biblioteca Lucide (se estiver sendo usada) */
-if (typeof lucide !== 'undefined') lucide.createIcons();
+/* Garante que a página sempre abre no topo */
+history.scrollRestoration = 'manual';
+window.scrollTo(0, 0);
+

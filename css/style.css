@@ -143,6 +143,24 @@ body { font-family: 'Poppins', sans-serif; color: var(--text); background: #fff;
 /* --- Conteúdo central do hero (fica acima de tudo) --- */
 .hero-content { position: relative; z-index: 2; max-width: 780px; padding: 0 20px; margin-bottom: 100px; }
 
+/* ================================================
+   ANIMAÇÕES DE ENTRADA DO HERO
+   Badge desce, título sobe, botões sobem depois
+   do efeito de digitação terminar (~1.8s)
+   ================================================ */
+.hero-tag  { animation: heroSlideDown .6s ease .1s both; }
+#hero h1   { animation: heroFadeUp .7s ease .4s both; }
+.hero-btns { animation: heroFadeUp .6s ease 1.8s both; }
+
+@keyframes heroSlideDown {
+  from { opacity: 0; transform: translateY(-18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 /* Etiqueta/badge acima do título */
 .hero-tag {
   display: inline-block;
