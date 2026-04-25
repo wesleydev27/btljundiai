@@ -50,7 +50,7 @@ const SERVICES = [
   { title: 'Conserto para Micro-ondas',
     desc: 'Concerto de micro-ondas de todas as marcas e modelos. Instalação, conserto e manutenção especializada para garantir o perfeito funcionamento do seu equipamento.',
     icon: '<rect x="2" y="6" width="20" height="14" rx="2"/><rect x="5" y="9" width="9" height="8" rx="1"/><circle cx="19" cy="11" r="1"/><circle cx="19" cy="15" r="1"/>',
-    img: 'assets/Conserto de Lavadora' }, /* troque por: assets/Micro-ondas.png */
+    img: 'assets/conserto-para-micro-ondas.jpg' }, /* troque por: assets/Micro-ondas.png */
 
   { title: 'Conserto de Secadora',
     desc: 'Concerto de de secadoras de todas as marcas e modelos. Instalação, conserto e manutenção.',
