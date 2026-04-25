@@ -380,7 +380,7 @@ section { padding: 80px 5%; }
 
 /* Área da imagem do serviço */
 .service-img {
-  height: 200px; position: relative; overflow: hidden;
+  height: 250px; position: relative; overflow: hidden;
   background: var(--blue-pale);
   display: flex; align-items: center; justify-content: center;
 }

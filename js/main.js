@@ -15,37 +15,37 @@ const SERVICES = [
   { title: 'Conserto de Lavadora',
     desc: 'Concerto de lavadoras de todas as marcas e modelos. Instalação, conserto e manutenção.',
     icon: '<rect x="3" y="2" width="18" height="20" rx="2"/><circle cx="12" cy="13" r="5"/><path d="M8 6h2"/><circle cx="15" cy="6" r="1"/>',
-    img: 'assets/Conserto de Lavadora.webp' },
+    img: 'assets/conserto-de-lavadora.png' },
 
   { title: 'Conserto para Lava e Seca',
     desc: 'Concerto de lava e seca de todas as marcas e modelos. Instalação, conserto e manutenção.',
     icon: '<rect x="3" y="2" width="18" height="20" rx="2"/><circle cx="12" cy="13" r="5"/><path d="M8 6h2"/><circle cx="15" cy="6" r="1"/><path d="M16 8c1-1 2-1 2 1s-1 2-2 1"/>',
-    img: 'assets/Conserto para Lava e Seca.webp' }, /* troque por: assets/Lava e Seca.png */
+    img: 'assets/concerto-lava-seca.webp' }, /* troque por: assets/Lava e Seca.png */
 
   { title: 'Conserto para Chopeira',
     desc: 'Concerto de chopeiras de todas as marcas e modelos.',
     icon: '<path d="M8 3h8l1 4H7z"/><rect x="7" y="7" width="10" height="11" rx="1"/><path d="M12 18v3M9 21h6"/><path d="M17 10h2a2 2 0 010 4h-2"/>',
-    img: 'assets/Conserto para Chopeira.webp' }, /* troque por: assets/Chopeira.png */
+    img: 'assets/conserto-de-chopeira.png' }, /* troque por: assets/Chopeira.png */
 
   { title: 'Conserto para Frigobar',
     desc: 'Concerto de frigobares de todas as marcas e modelos.',
     icon: '<rect x="6" y="2" width="12" height="20" rx="2"/><path d="M6 10h12"/><path d="M11 6v2"/>',
-    img: 'assets/Conserto para Frigobar.webp' }, /* troque por: assets/Frigobar.png */
+    img: 'assets/concerto-de-frigobar.jpg' }, /* troque por: assets/Frigobar.png */
 
   { title: 'Conserto para Bebedouro',
     desc: 'Concerto de bebedouros de todas as marcas e modelos.',
     icon: '<path d="M12 2a4 4 0 014 4v2H8V6a4 4 0 014-4z"/><rect x="7" y="8" width="10" height="12" rx="2"/><path d="M12 14v3"/><circle cx="12" cy="13" r="1"/>',
-    img: 'assets/Conserto para Bebedouro.webp' }, /* troque por: assets/Bebedouro.png */
+    img: 'assets/concerto-de-bebedouro.jpg' }, /* troque por: assets/Bebedouro.png */
 
   { title: 'Concerto de Geladeira',
     desc: 'Técnico especializado geladeiras de todas as marcas e modelos. Instalação, conserto e manutenção. Diagnóstico no mesmo dia.',
     icon: '<rect x="4" y="2" width="16" height="20" rx="2"/><path d="M4 10h16"/><path d="M10 6v2"/><path d="M10 15v3"/>',
-    img: 'assets/Conserto de Lavadora' }, /* troque por: assets/Geladeira.png */
+    img: 'assets/concerto-de-geladeria.jpg' }, /* troque por: assets/Geladeira.png */
 
   { title: 'Conserto de Freezer',
     desc: 'Concerto de faz o reparo de todas as marcas e modelos. Instalação, conserto e manutenção com excelência.',
     icon: '<rect x="4" y="2" width="16" height="20" rx="2"/><path d="M12 7v10M8 9l8 6M16 9l-8 6"/>',
-    img: 'assets/Conserto de Lavadora' }, /* troque por: assets/Freezer.png */
+    img: 'assets/concerto-de-freezer.jpg' }, /* troque por: assets/Freezer.png */
 
   { title: 'Conserto para Micro-ondas',
     desc: 'Concerto de micro-ondas de todas as marcas e modelos. Instalação, conserto e manutenção especializada para garantir o perfeito funcionamento do seu equipamento.',
