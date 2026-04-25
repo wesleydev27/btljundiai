@@ -57,20 +57,20 @@ const SERVICES = [
     icon: '<rect x="3" y="2" width="18" height="20" rx="2"/><circle cx="12" cy="13" r="5"/><path d="M8 6h2M15 6h1"/><path d="M10 13c0-1 1-2 2-2"/>',
     img: 'assets/conserto-de-secadora.jpg' }, /* troque por: assets/Secadora.png */
 
-  { title: 'Conserto para Lava Louça',
+  { title: 'Conserto para Lava Louças',
     desc: 'Concerto de lava louças de todas as marcas e modelos. Instalação, conserto e manutenção.',
     icon: '<rect x="3" y="2" width="18" height="20" rx="2"/><path d="M3 8h18"/><path d="M7 13h10M7 16h10"/><path d="M9 11l1 2M13 11l1 2"/>',
-    img: 'assets/Conserto de Lavadora' }, /* troque por: assets/Lava Louca.png */
+    img: 'assets/concerto-de-conserto-lava-loucas.jpg' }, /* troque por: assets/Lava Louca.png */
 
   { title: 'Conserto de Placas Eletrônicas',
     desc: 'Nossa equipe trabalha rigorosamente no reparo de placas eletrônicas, garantindo precisão em cada reparo.',
     icon: '<rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 2v2M10 2v2M14 2v2M18 2v2M6 20v2M18 20v2"/><circle cx="9" cy="10" r="1"/><circle cx="15" cy="10" r="1"/><path d="M7 14h10"/>',
-    img: 'assets/Conserto de Lavadora' }, /* troque por: assets/Placas Eletronicas.png */
+    img: 'assets/conserto-de-placa-eletronica.jpg' }, /* troque por: assets/Placas Eletronicas.png */
 
   { title: 'Conserto de Placas Inverter',
     desc: 'As placas inverter controlam a velocidade do compressor. Reparamos com técnicos especializados.',
     icon: '<rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 12h2l2-4 2 8 2-4h4"/><circle cx="6" cy="8" r="1" fill="currentColor"/><circle cx="18" cy="16" r="1" fill="currentColor"/>',
-    img: 'assets/Conserto de Lavadora' }, /* troque por: assets/Placas Inverter.png */
+    img: 'assets/concerto-de-placa-inverter.jpg' }, /* troque por: assets/Placas Inverter.png */
 ];
 
 /* ================================================
