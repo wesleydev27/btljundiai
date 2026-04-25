@@ -43,7 +43,7 @@ const SERVICES = [
     img: 'assets/concerto-de-geladeria.webp' }, /* troque por: assets/Geladeira.webp */
 
   { title: 'Manutenção de Freezer',
-    desc: 'Manutenção de faz o reparo de todas as marcas e modelos. Instalação, conserto e manutenção com excelência.',
+    desc: 'Manutenção de freezer o reparo de todas as marcas e modelos. Instalação, conserto e manutenção com excelência.',
     icon: '<rect x="4" y="2" width="16" height="20" rx="2"/><path d="M12 7v10M8 9l8 6M16 9l-8 6"/>',
     img: 'assets/concerto-de-freezer.webp' }, /* troque por: assets/Freezer.webp */
 
