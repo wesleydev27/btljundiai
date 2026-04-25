@@ -12,65 +12,70 @@ const WA = '5511996905490';
    Para remover: apague o bloco { } correspondente
    ================================================ */
 const SERVICES = [
-  { title: 'Conserto de Lavadora',
-    desc: 'Concerto de lavadoras de todas as marcas e modelos. Instalação, conserto e manutenção.',
+  { title: 'Manutenção de Lavadora',
+    desc: 'Manutenção de lavadoras de todas as marcas e modelos. Instalação, conserto e manutenção.',
     icon: '<rect x="3" y="2" width="18" height="20" rx="2"/><circle cx="12" cy="13" r="5"/><path d="M8 6h2"/><circle cx="15" cy="6" r="1"/>',
-    img: 'assets/conserto-de-lavadora.png' },
+    img: 'assets/conserto-de-lavadora.webp' },
 
-  { title: 'Conserto para Lava e Seca',
-    desc: 'Concerto de lava e seca de todas as marcas e modelos. Instalação, conserto e manutenção.',
+  { title: 'Manutenção de Lava e Seca',
+    desc: 'Manutenção de lava e seca de todas as marcas e modelos. Instalação, conserto e manutenção.',
     icon: '<rect x="3" y="2" width="18" height="20" rx="2"/><circle cx="12" cy="13" r="5"/><path d="M8 6h2"/><circle cx="15" cy="6" r="1"/><path d="M16 8c1-1 2-1 2 1s-1 2-2 1"/>',
-    img: 'assets/concerto-lava-seca.webp' }, /* troque por: assets/Lava e Seca.png */
+    img: 'assets/concerto-lava-seca.webp' }, /* troque por: assets/Lava e Seca.webp */
 
-  { title: 'Conserto para Chopeira',
-    desc: 'Concerto de chopeiras de todas as marcas e modelos.',
+  { title: 'Manutenção de Chopeira',
+    desc: 'Manutenção de chopeiras de todas as marcas e modelos.',
     icon: '<path d="M8 3h8l1 4H7z"/><rect x="7" y="7" width="10" height="11" rx="1"/><path d="M12 18v3M9 21h6"/><path d="M17 10h2a2 2 0 010 4h-2"/>',
-    img: 'assets/conserto-de-chopeira.png' }, /* troque por: assets/Chopeira.png */
+    img: 'assets/conserto-de-chopeira.webp' }, /* troque por: assets/Chopeira.webp */
 
-  { title: 'Conserto para Frigobar',
-    desc: 'Concerto de frigobares de todas as marcas e modelos.',
+  { title: 'Manutenção de Frigobar',
+    desc: 'Manutenção de frigobares de todas as marcas e modelos.',
     icon: '<rect x="6" y="2" width="12" height="20" rx="2"/><path d="M6 10h12"/><path d="M11 6v2"/>',
-    img: 'assets/concerto-de-frigobar.jpg' }, /* troque por: assets/Frigobar.png */
+    img: 'assets/concerto-de-frigobar.webp' }, /* troque por: assets/Frigobar.webp */
 
-  { title: 'Conserto para Bebedouro',
-    desc: 'Concerto de bebedouros de todas as marcas e modelos.',
+  { title: 'Manutenção de Bebedouro',
+    desc: 'Manutenção de bebedouros de todas as marcas e modelos.',
     icon: '<path d="M12 2a4 4 0 014 4v2H8V6a4 4 0 014-4z"/><rect x="7" y="8" width="10" height="12" rx="2"/><path d="M12 14v3"/><circle cx="12" cy="13" r="1"/>',
-    img: 'assets/concerto-de-bebedouro.jpg' }, /* troque por: assets/Bebedouro.png */
+    img: 'assets/concerto-de-bebedouro.webp' }, /* troque por: assets/Bebedouro.webp */
 
-  { title: 'Concerto de Geladeira',
+  { title: 'Manutenção de Geladeira',
     desc: 'Técnico especializado geladeiras de todas as marcas e modelos. Instalação, conserto e manutenção. Diagnóstico no mesmo dia.',
     icon: '<rect x="4" y="2" width="16" height="20" rx="2"/><path d="M4 10h16"/><path d="M10 6v2"/><path d="M10 15v3"/>',
-    img: 'assets/concerto-de-geladeria.jpg' }, /* troque por: assets/Geladeira.png */
+    img: 'assets/concerto-de-geladeria.webp' }, /* troque por: assets/Geladeira.webp */
 
-  { title: 'Conserto de Freezer',
-    desc: 'Concerto de faz o reparo de todas as marcas e modelos. Instalação, conserto e manutenção com excelência.',
+  { title: 'Manutenção de Freezer',
+    desc: 'Manutenção de faz o reparo de todas as marcas e modelos. Instalação, conserto e manutenção com excelência.',
     icon: '<rect x="4" y="2" width="16" height="20" rx="2"/><path d="M12 7v10M8 9l8 6M16 9l-8 6"/>',
-    img: 'assets/concerto-de-freezer.jpg' }, /* troque por: assets/Freezer.png */
+    img: 'assets/concerto-de-freezer.webp' }, /* troque por: assets/Freezer.webp */
 
-  { title: 'Conserto para Micro-ondas',
-    desc: 'Concerto de micro-ondas de todas as marcas e modelos. Instalação, conserto e manutenção especializada para garantir o perfeito funcionamento do seu equipamento.',
+  { title: 'Manutenção de Micro-ondas',
+    desc: 'Manutenção de micro-ondas de todas as marcas e modelos. Instalação, conserto e manutenção especializada para garantir o perfeito funcionamento do seu equipamento.',
     icon: '<rect x="2" y="6" width="20" height="14" rx="2"/><rect x="5" y="9" width="9" height="8" rx="1"/><circle cx="19" cy="11" r="1"/><circle cx="19" cy="15" r="1"/>',
-    img: 'assets/conserto-para-micro-ondas.jpg' }, /* troque por: assets/Micro-ondas.png */
+    img: 'assets/conserto-para-micro-ondas.webp' }, /* troque por: assets/Micro-ondas.webp */
 
-  { title: 'Conserto de Secadora',
-    desc: 'Concerto de de secadoras de todas as marcas e modelos. Instalação, conserto e manutenção.',
+  { title: 'Manutenção de Secadora',
+    desc: 'Manutenção de de secadoras de todas as marcas e modelos. Instalação, conserto e manutenção.',
     icon: '<rect x="3" y="2" width="18" height="20" rx="2"/><circle cx="12" cy="13" r="5"/><path d="M8 6h2M15 6h1"/><path d="M10 13c0-1 1-2 2-2"/>',
-    img: 'assets/conserto-de-secadora.jpg' }, /* troque por: assets/Secadora.png */
+    img: 'assets/conserto-de-secadora.webp' }, /* troque por: assets/Secadora.webp */
 
-  { title: 'Conserto para Lava Louças',
-    desc: 'Concerto de lava louças de todas as marcas e modelos. Instalação, conserto e manutenção.',
+  { title: 'Manutenção de Lava Louças',
+    desc: 'Manutenção de lava louças de todas as marcas e modelos. Instalação, conserto e manutenção.',
     icon: '<rect x="3" y="2" width="18" height="20" rx="2"/><path d="M3 8h18"/><path d="M7 13h10M7 16h10"/><path d="M9 11l1 2M13 11l1 2"/>',
-    img: 'assets/concerto-de-conserto-lava-loucas.jpg' }, /* troque por: assets/Lava Louca.png */
+    img: 'assets/concerto-de-conserto-lava-loucas.webp' }, /* troque por: assets/Lava Louca.webp */
 
-  { title: 'Conserto de Placas Eletrônicas',
+  { title: 'Manutenção de Placas Eletrônicas',
     desc: 'Nossa equipe trabalha rigorosamente no reparo de placas eletrônicas, garantindo precisão em cada reparo.',
     icon: '<rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 2v2M10 2v2M14 2v2M18 2v2M6 20v2M18 20v2"/><circle cx="9" cy="10" r="1"/><circle cx="15" cy="10" r="1"/><path d="M7 14h10"/>',
-    img: 'assets/conserto-de-placa-eletronica.jpg' }, /* troque por: assets/Placas Eletronicas.png */
+    img: 'assets/conserto-de-placa-eletronica.webp' }, /* troque por: assets/Placas Eletronicas.webp */
 
-  { title: 'Conserto de Placas Inverter',
+  { title: 'Manutenção de Placas Inverter',
     desc: 'As placas inverter controlam a velocidade do compressor. Reparamos com técnicos especializados.',
     icon: '<rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 12h2l2-4 2 8 2-4h4"/><circle cx="6" cy="8" r="1" fill="currentColor"/><circle cx="18" cy="16" r="1" fill="currentColor"/>',
-    img: 'assets/concerto-de-placa-inverter.jpg' }, /* troque por: assets/Placas Inverter.png */
+    img: 'assets/concerto-de-placa-inverter.webp' }, /* troque por: assets/Placas Inverter.webp */
+
+     { title: 'Outros Serviços',
+    desc: 'Descubra outros serviços que podem agregar ainda mais valor ao que você procura.',
+    icon: '<rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 2v2M10 2v2M14 2v2M18 2v2M6 20v2M18 20v2"/><circle cx="9" cy="10" r="1"/><circle cx="15" cy="10" r="1"/><path d="M7 14h10"/>',
+    img: 'assets/outros-servicos.webp' }, /* troque por: assets/Placas Eletronicas.webp */
 ];
 
 /* ================================================
@@ -108,7 +113,7 @@ function renderServices() {
         <h3>${s.title}</h3>
         <p>${s.desc}</p>
         <!-- Botão abre o WhatsApp com mensagem pré-preenchida com o nome do serviço -->
-        <a href="https://wa.me/${WA}?text=${encodeURIComponent('Olá! Preciso de Conserto para: ' + s.title)}"
+        <a href="https://wa.me/${WA}?text=${encodeURIComponent('Olá! Preciso de Manutenção de: ' + s.title)}"
            class="btn-service" target="_blank" rel="noopener noreferrer">Pedir Orçamento</a>
       </div>
     </article>
