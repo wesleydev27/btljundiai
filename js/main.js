@@ -55,7 +55,7 @@ const SERVICES = [
   { title: 'Conserto de Secadora',
     desc: 'Concerto de de secadoras de todas as marcas e modelos. Instalação, conserto e manutenção.',
     icon: '<rect x="3" y="2" width="18" height="20" rx="2"/><circle cx="12" cy="13" r="5"/><path d="M8 6h2M15 6h1"/><path d="M10 13c0-1 1-2 2-2"/>',
-    img: 'assets/Conserto de Lavadora' }, /* troque por: assets/Secadora.png */
+    img: 'assets/conserto-de-secadora.jpg' }, /* troque por: assets/Secadora.png */
 
   { title: 'Conserto para Lava Louça',
     desc: 'Concerto de lava louças de todas as marcas e modelos. Instalação, conserto e manutenção.',
