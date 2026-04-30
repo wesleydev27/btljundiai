@@ -432,7 +432,13 @@ section { padding: 80px 5%; }
   filter: grayscale(1); flex-shrink: 0;
 }
 .brand-logo:hover { opacity: 1; filter: grayscale(0); }
-.brand-logo img { height: 36px; width: auto; object-fit: contain; display: block; }
+.brand-logo img {
+  width: 100px;
+  height: 60px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
 
 /* Logos em texto (quando não há imagem da marca) */
 .brand-logo-text {
