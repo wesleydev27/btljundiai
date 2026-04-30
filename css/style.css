@@ -48,9 +48,9 @@ body { font-family: 'Poppins', sans-serif; color: var(--text); background: #fff;
    ================================================ */
 #header {
   position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-  padding: 0 5%;
+  padding: 1% 5%;
   display: flex; align-items: center; justify-content: space-between;
-  height: 70px;
+  height: 78px;
   background: transparent; /* Começa transparente sobre o hero */
   transition: background .3s, box-shadow .3s;
 }
@@ -61,15 +61,7 @@ body { font-family: 'Poppins', sans-serif; color: var(--text); background: #fff;
 }
 
 /* --- Logo --- */
-.logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-.logo-icon {
-  width: 44px; height: 44px; background: var(--blue-light);
-  border-radius: 10px; display: flex; align-items: center; justify-content: center;
-}
-.logo-icon svg { width: 26px; height: 26px; fill: white; }
-.logo-text { color: white; font-weight: 900; font-size: 1.45rem; line-height: 1.15; letter-spacing: -.03em; }
-.logo-text span { color: #7dc4ff; display: block; font-size: .72rem; font-weight: 500; letter-spacing: .04em; }
-
+.logo { display: flex; align-items: center; gap: 10px; }
 /* --- Botão de orçamento no header --- */
 .btn-header {
   background: var(--green); color: #fff; border: none; border-radius: 8px;
