@@ -62,6 +62,11 @@ const SERVICES = [
     icon: '<rect x="3" y="2" width="18" height="20" rx="2"/><path d="M3 8h18"/><path d="M7 13h10M7 16h10"/><path d="M9 11l1 2M13 11l1 2"/>',
     img: 'assets/concerto-de-conserto-lava-loucas.webp' }, /* troque por: assets/Lava Louca.webp */
 
+     { title: 'Manutenção de Fogão',
+    desc: 'Manutenção de fogões de todas as marcas e modelos. Instalação, conserto e manutenção.',
+    icon: '<rect x="3" y="2" width="18" height="20" rx="2"/><path d="M3 8h18"/><path d="M7 13h10M7 16h10"/><path d="M9 11l1 2M13 11l1 2"/>',
+    img: 'assets/conserto-de-fogao.webp' }, /* troque por: assets/Fogão.webp */
+
   { title: 'Manutenção de Placas Eletrônicas',
     desc: 'Nossa equipe trabalha rigorosamente no reparo de placas eletrônicas, garantindo precisão em cada reparo.',
     icon: '<rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 2v2M10 2v2M14 2v2M18 2v2M6 20v2M18 20v2"/><circle cx="9" cy="10" r="1"/><circle cx="15" cy="10" r="1"/><path d="M7 14h10"/>',
