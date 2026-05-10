@@ -22,6 +22,17 @@ const SERVICES = [
     icon: '<rect x="3" y="2" width="18" height="20" rx="2"/><circle cx="12" cy="13" r="5"/><path d="M8 6h2"/><circle cx="15" cy="6" r="1"/><path d="M16 8c1-1 2-1 2 1s-1 2-2 1"/>',
     img: 'assets/concerto-lava-seca.webp' }, /* troque por: assets/Lava e Seca.webp */
 
+    {
+    title: 'Manutenção de Geladeira',
+    desc: 'Técnico especializado geladeiras de todas as marcas e modelos. Instalação, conserto e manutenção. Diagnóstico no mesmo dia.',
+    icon: '<rect x="4" y="2" width="16" height="20" rx="2"/><path d="M4 10h16"/><path d="M10 6v2"/><path d="M10 15v3"/>',
+    img: 'assets/concerto-de-geladeria.webp' }, /* troque por: assets/Geladeira.webp */
+
+    { title: 'Manutenção de Lava Louças',
+    desc: 'Manutenção de lava louças de todas as marcas e modelos. Instalação, conserto e manutenção.',
+    icon: '<rect x="3" y="2" width="18" height="20" rx="2"/><path d="M3 8h18"/><path d="M7 13h10M7 16h10"/><path d="M9 11l1 2M13 11l1 2"/>',
+    img: 'assets/concerto-de-conserto-lava-loucas.webp' }, /* troque por: assets/Lava Louca.webp */
+
   { title: 'Manutenção de Chopeira',
     desc: 'Manutenção de chopeiras de todas as marcas e modelos.',
     icon: '<path d="M8 3h8l1 4H7z"/><rect x="7" y="7" width="10" height="11" rx="1"/><path d="M12 18v3M9 21h6"/><path d="M17 10h2a2 2 0 010 4h-2"/>',
@@ -36,11 +47,6 @@ const SERVICES = [
     desc: 'Manutenção de bebedouros de todas as marcas e modelos.',
     icon: '<path d="M12 2a4 4 0 014 4v2H8V6a4 4 0 014-4z"/><rect x="7" y="8" width="10" height="12" rx="2"/><path d="M12 14v3"/><circle cx="12" cy="13" r="1"/>',
     img: 'assets/concerto-de-bebedouro.webp' }, /* troque por: assets/Bebedouro.webp */
-
-  { title: 'Manutenção de Geladeira',
-    desc: 'Técnico especializado geladeiras de todas as marcas e modelos. Instalação, conserto e manutenção. Diagnóstico no mesmo dia.',
-    icon: '<rect x="4" y="2" width="16" height="20" rx="2"/><path d="M4 10h16"/><path d="M10 6v2"/><path d="M10 15v3"/>',
-    img: 'assets/concerto-de-geladeria.webp' }, /* troque por: assets/Geladeira.webp */
 
   { title: 'Manutenção de Freezer',
     desc: 'Manutenção de freezer o reparo de todas as marcas e modelos. Instalação, conserto e manutenção com excelência.',
@@ -57,12 +63,8 @@ const SERVICES = [
     icon: '<rect x="3" y="2" width="18" height="20" rx="2"/><circle cx="12" cy="13" r="5"/><path d="M8 6h2M15 6h1"/><path d="M10 13c0-1 1-2 2-2"/>',
     img: 'assets/conserto-de-secadora.webp' }, /* troque por: assets/Secadora.webp */
 
-  { title: 'Manutenção de Lava Louças',
-    desc: 'Manutenção de lava louças de todas as marcas e modelos. Instalação, conserto e manutenção.',
-    icon: '<rect x="3" y="2" width="18" height="20" rx="2"/><path d="M3 8h18"/><path d="M7 13h10M7 16h10"/><path d="M9 11l1 2M13 11l1 2"/>',
-    img: 'assets/concerto-de-conserto-lava-loucas.webp' }, /* troque por: assets/Lava Louca.webp */
 
-     { title: 'Manutenção de Fogão',
+    { title: 'Manutenção de Fogão',
     desc: 'Manutenção de fogões de todas as marcas e modelos. Instalação, conserto e manutenção.',
     icon: '<rect x="3" y="2" width="18" height="20" rx="2"/><path d="M3 8h18"/><path d="M7 13h10M7 16h10"/><path d="M9 11l1 2M13 11l1 2"/>',
     img: 'assets/conserto-de-fogao.webp' }, /* troque por: assets/Fogão.webp */
